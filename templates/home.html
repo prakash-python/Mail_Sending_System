@@ -21,11 +21,11 @@
             text-align: center; border-radius: 10px;">
             <form action="" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
-                <input type="text" class=" form-control custom-placeholder" name="Total_labs" placeholder="Enter Total Number of  Labs conducted" ><br>
-                <input type="text" class=" form-control custom-placeholder" name="Total_mocks" placeholder="Enter Total Number of  Mocks conducted"><br>
-                <input type="text" class=" form-control custom-placeholder" name="Total_tests" placeholder="Enter Total Number of  Weekly Tests conducted" ><br>
-              	<input type="text" class=" form-control custom-placeholder" name="Total_assaignments" placeholder="Enter Total Number of  Assignments given" ><br>
-                <select name="MonthOnly" id="Months" class="form-control" style="cursor: pointer;">
+                <input type="text" class=" form-control custom-placeholder" name="Total_labs" placeholder="Enter Total Number of  Labs conducted" required="True"><br>
+                <input type="text" class=" form-control custom-placeholder" name="Total_mocks" placeholder="Enter Total Number of  Mocks conducted" required="True"><br>
+                <input type="text" class=" form-control custom-placeholder" name="Total_tests" placeholder="Enter Total Number of  Weekly Tests conducted" required="True" ><br>
+              	<input type="text" class=" form-control custom-placeholder" name="Total_assaignments" placeholder="Enter Total Number of  Assignments given" required="True" ><br>
+                <select name="MonthOnly" id="Months" class="form-control" style="cursor: pointer;" required="True">
                   <option value="" disabled selected>Select Month</option>
                   <option value="January">January</option>
                   <option value="February">February</option>
